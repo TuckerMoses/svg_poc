@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {Circle, Rectangle} from './Shapes'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <Rectangle width="1rem" height="1rem" x="0" y="0" setVisible={(noValue: boolean) => alert("rectangle clicked!")} />
+        <Circle radius="1rem" centerX="3rem" centerY="3rem" setVisible={(noValue: boolean) => alert("Circle clicked!")} />
+      </svg>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

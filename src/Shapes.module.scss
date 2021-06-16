@@ -1,0 +1,16 @@
+.svgElement:hover { 
+  fill: grey;
+  transition: all ease 0.3s;
+}
+
+.svgElement {
+  fill: white;
+  stroke: black;
+  transition: all ease 0.3s;
+}
+
+.specialDiv{
+  position: fixed;
+  border-radius: 1rem;
+  border-color: coral;
+}
